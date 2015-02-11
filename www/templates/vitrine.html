@@ -1,0 +1,15 @@
+<ion-view title="Vitrine">
+  <ion-content>
+    <div class="list">
+      <div ng-repeat="produto in ::vm.produtos">
+        <a class="item item-thumbnail-left" href="#/produto/123">
+          <img src="img/ai_max.jpg">
+          <h2>{{::produto.nome}}</h2>
+          <p style="color: brown">De {{::produto.precoAnterior | currency : 'R$'}}</p>
+          <h2 style="color: #28a54c">Por {{::produto.preco}}</h2>
+        </a>
+      </div>
+
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,25 @@
+<ion-view view-title="Nike">
+  <ion-nav-buttons side="right">
+    <button data-ng-click="vm.adicionarAoCarrinho()"
+            class="button button-icon ion-android-checkmark">
+    </button>
+  </ion-nav-buttons>
+  <ion-content style="padding: 20px">
+    <div class="row">
+      <div class="col-50 col-offset-20">
+        <img src="img/ai_max.jpg" width="200" height="200">
+      </div>
+    </div>
+    <div class="row" >
+      <div>
+        <p style="font-style: italic">{{vm.produto.descricao}}</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 20px">
+      <h3 style="color: brown">De {{vm.produto.precoAnterior}}</h3>
+    </div>
+    <div class="row">
+      <h2 style="color: green">por {{vm.produto.preco}}</h2>
+    </div>
+  </ion-content>
+</ion-view>
